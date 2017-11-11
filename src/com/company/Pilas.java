@@ -70,10 +70,21 @@ catch (Exception ex)
 }
     }
 
+    public int size (){
+        return size;
+    }
 
-
-
-
+    public int pop (){//contar
+        Nodo aux = null;
+        int i=0;
+        aux = top;
+        while(aux != null){
+            aux = aux.getProx();
+            i++;
+        }
+        return i;
+    }
+    
 }
 
 
