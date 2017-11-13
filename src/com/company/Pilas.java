@@ -29,6 +29,8 @@ public class Pilas {
         }
     }
 
+
+
     public void peek () {//mostrar
         Nodo temp = top;
         if (temp != null){
@@ -42,7 +44,17 @@ public class Pilas {
             System.out.println("Pila Vacía");
     }
 
+    public void eliminar(int numero){//metodo para borrar
+        if ( !vacia()){
+            System.out.println("dato Eliminado: "+top.getValor());
+            top = top.getProx();
 
+        }
+        else
+            System.out.println("la pila esta vacia");
+
+
+    }
 
     public void cima(int busqueda) {//busca
 

@@ -6,17 +6,16 @@ public class Main {
 
     public static void main(String[] args) {
 
+        int min = 10000;
+        int max = 0;
+
         Pilas p = new  Pilas ();
 
         Scanner sc = new Scanner(System.in);
 
 
-        String insertar = "1.Insertar",mostrar ="2.Mostrar",buscar="3.Buscar",
-                eliminar = "4.Eliminar",contar="5.Contar",maximo="6.Valor Maximo",minimo="7.Valor Minimo";
-
         boolean salir = false;
-          int min = 10000;
-          int max = 0;
+
 
 
         while (!salir){
@@ -55,13 +54,13 @@ public class Main {
 
                             System.out.println("**********************************");
                             System.out.println(" " );
-
                             if (valor< min){
                                 min = valor;
                             }
                             if (valor > max){
                                 max = valor;
                             }
+
                         }
 
 
@@ -94,7 +93,7 @@ public class Main {
                          }
 
                         break;
-                    /*case 4:
+                    case 4:
                         if(p.vacia()){
                             System.out.println("La lista esta vacia no puedes eliminar elementos ");
                         }
@@ -107,7 +106,7 @@ public class Main {
                             System.out.println("\n");
                         }
 
-                        break; */
+                        break;
                     case 5:
                         if(p.vacia()){
                             System.out.println("La lista esta vacia no hay elementos ");
@@ -131,7 +130,9 @@ public class Main {
                         }
                         break;
 
+
                     case 7:
+
                         if(p.vacia()){
                             System.out.println("La lista esta vacia no hay elementos ");
                         }else {
